@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/suShowNamaSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Supplier"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/suShowAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Supplier"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/suShowNamaSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Sales"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/suShowNoTelpSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Telp Sales"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</LinearLayout>

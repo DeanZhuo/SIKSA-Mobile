@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuo.dean.siksa_mobile">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start.Report.ReportMasuk"></activity>
+        <activity android:name=".Start.Report.ReportKeluar" />
+        <activity android:name=".Start.Cabang.CabangUbah"
+            android:parentActivityName=".Start.Cabang.CabangTampil"/>
+        <activity android:name=".Start.Cabang.CabangDetail"
+            android:parentActivityName=".Start.Cabang.CabangTampil"/>
+        <activity android:name=".Start.Cabang.CabangTambah"
+            android:parentActivityName=".Start.Cabang.CabangTampil"/>
+        <activity android:name=".Start.Cabang.CabangTampil"
+            android:parentActivityName=".Start.Main.MainActivity"/>
+        <activity android:name=".Start.Sparepart.ProcurementUbah"
+            android:parentActivityName=".Start.Sparepart.SparepartProcurement"/>
+        <activity android:name=".Start.Sparepart.ProcurementDetail"
+            android:parentActivityName=".Start.Sparepart.ProcurementDetail"/>
+        <activity android:name=".Start.Sparepart.ProcurementSuppliers"
+            android:parentActivityName=".Start.Sparepart.ProcurementDetail"/>
+        <activity android:name=".Start.Sparepart.ProcurementTambah"
+            android:parentActivityName=".Start.Sparepart.ProcurementDetail"/>
+        <activity android:name=".Start.Sparepart.ProcurementList"
+            android:parentActivityName=".Start.Sparepart.ProcurementDetail"/>
+        <activity android:name=".Start.Sparepart.SparepartProcurement"
+            android:parentActivityName=".Start.Main.MainActivity"/>
+        <activity
+            android:name=".Start.Transactional.TransaksiByCustomer"
+            android:parentActivityName=".Start.Main.MainActivity" />
+        <activity
+            android:name=".Start.Transactional.TransaksiService"
+            android:parentActivityName=".Start.Transactional.TransaksiDetail" />
+        <activity
+            android:name=".Start.Transactional.TransaksiSparepart"
+            android:parentActivityName=".Start.Transactional.TransaksiDetail" />
+        <activity
+            android:name=".Start.Transactional.TransaksiDetail"
+            android:parentActivityName=".Start.Transactional.TransaksiByCustomer" />
+        <activity
+            android:name=".Start.Transactional.TransaksiTambah"
+            android:parentActivityName=".Start.Transactional.TransaksiByCustomer" />
+        <activity
+            android:name=".Start.Transactional.TransaksiTampil"
+            android:parentActivityName=".Start.Transactional.TransaksiByCustomer" />
+        <activity
+            android:name=".Start.Supplier.SupplierUbah"
+            android:parentActivityName=".Start.Supplier.SupplierDetail" />
+        <activity
+            android:name=".Start.Supplier.SupplierDetail"
+            android:parentActivityName=".Start.Supplier.SupplierTampil" />
+        <activity
+            android:name=".Start.Supplier.SupplierTampil"
+            android:parentActivityName=".Start.Main.MainActivity" />
+        <activity
+            android:name=".Start.Supplier.SupplierTambah"
+            android:parentActivityName=".Start.Supplier.SupplierTampil" />
+        <activity android:name=".Start.Main.MainActivity" />
+        <activity
+            android:name=".Start.Main.PasswordChange"
+            android:parentActivityName=".Start.Main.MainActivity" />
+        <activity
+            android:name=".Start.Sparepart.SparepartUbah"
+            android:parentActivityName=".Start.Sparepart.SparepartDetail" />
+        <activity android:name=".Start.Main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Start.Main.LoginActivity" />
+        <activity
+            android:name=".Start.Sparepart.SparepartTambah"
+            android:parentActivityName=".Start.Sparepart.SparepartTampil" />
+        <activity
+            android:name=".Start.Sparepart.SparepartTampil"
+            android:parentActivityName=".Start.Main.MainActivity" />
+        <activity
+            android:name=".Start.Sparepart.SparepartDetail"
+            android:parentActivityName=".Start.Sparepart.SparepartTampil" />
+    </application>
+
+</manifest>
